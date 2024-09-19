@@ -27,8 +27,11 @@
     <center>Operaciones</center>
     
     <?php
-    $num1=45;
-    $num2=50;
+    $num1=1;
+    $num2=2;
+
+    echo $num1.'<br>'.$num2.'<br>';
+    
     $Suma=$num1+$num2;
     $Resta=$num1-$num2;
     $Multi=$num1*$num2; 
@@ -40,19 +43,26 @@
     echo 'la división de: '.$num1.' y '.$num2. ' es '.$Div.'<br>';
     ?>
     </font>
+
     <font size="5" color="green" face="comic sans ms">
         <CENTER>Formulario</CENTER>
+    </font>
+
     <form method="POST" action="datos.php">
         <table border="2" border_color="GREEN">
             <tr>
-                <th>nombre <input type="text" name='nombre' size='25' maxlength="50" REQUIRED></th>
-                <th>apellido <input type="text" name='apellido' size='25' maxlength="50"REQUIRED></th>
+                <th>Nombre <input type="text" name='nombre' size='25' maxlength="50" REQUIRED></th>
+                <th>Apellido <input type="text" name='apellido' size='25' maxlength="50"REQUIRED></th>
+            </tr>  
+            <tr>
+                <th>1pr Numero <input type="number" name='num1' size='25' REQUIRED></th>
+                <th>2do Numero <input type="number" name='num2' size='25' REQUIRED></th>
             </tr>  
             <tr>
                 <td align="center"><input type="submit" value="enviar"></td>
             </tr>
         </table>
     </form>
-    </font>
+    
 </body>
 </html>
