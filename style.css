@@ -1,4 +1,34 @@
 body{
     background-color: #333;
     color: #eee;
-}       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+div{
+    width: 60%;
+}
+h2{
+    text-align: center;
+    color: #f84;
+    text-transform: capitalize;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+}
+.formulario select{
+    font-size: 20px;
+    padding: 5px;
+}
